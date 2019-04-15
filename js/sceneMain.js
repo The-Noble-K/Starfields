@@ -37,7 +37,7 @@ class SceneMain extends Phaser.Scene {
             
             let circle = new Phaser.Geom.Circle(px, py, (1 - point.z / 32) * 2 );
             
-            let graphics = this.add.graphics({ fillStyle: { color: 0xffffff } });
+            let graphics = this.add.graphics({ fillStyle: { color: 0x9e00a5 } });
             graphics.setAlpha((1 - point.z / 32));
             graphics.fillCircleShape(circle);
             this.stars.add(graphics);
