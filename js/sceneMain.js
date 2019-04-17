@@ -35,7 +35,7 @@ class SceneMain extends Phaser.Scene {
             let px = point.x * (128 / point.z) + (this.game.config.width * 0.5);
             let py = point.y * (128 / point.z) + (this.game.config.height * 0.5);
             
-            let circle = new Phaser.Geom.Circle(px, py, (1 - point.z / 32) * 2 );
+            let circle = new Phaser.Geom.Circle(px, py, (1 - point.z / 32) * 2);
             
             let graphics = this.add.graphics({ fillStyle: { color: 0x9e00a5 } });
             graphics.setAlpha((1 - point.z / 32));
